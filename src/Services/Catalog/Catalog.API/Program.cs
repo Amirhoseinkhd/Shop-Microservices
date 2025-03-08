@@ -21,10 +21,10 @@ builder.Services.AddMarten(option =>
 }).UseLightweightSessions();
 
 // seeding database
-/*if (builder.Environment.IsDevelopment())
+if (builder.Environment.IsDevelopment())
 {
     builder.Services.InitializeMartenWith<CatalogInitialData>();
-}*/
+}
 
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
